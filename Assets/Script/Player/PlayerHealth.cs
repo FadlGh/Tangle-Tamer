@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health = 10;
-    
+    public int health = 20;
+    public Slider s;
     public void EditHealth(int amount)
     {
         health += amount;
@@ -14,14 +15,16 @@ public class PlayerHealth : MonoBehaviour
     {
         print(health);
 
-        if (health > 10)
+        if (health > 20)
         {
-            health = 10;
+            health = 20;
         }
 
         if (health < 0)
         {
             health = 0;
         }
+
+        s.value = health;
     }
 }
