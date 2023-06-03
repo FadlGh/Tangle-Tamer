@@ -10,6 +10,7 @@ public class Collectibles : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerHealth>().EditHealth(collectibleData.collectibleValue);
+            Destroy(gameObject);
         }
     }
 }
