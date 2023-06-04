@@ -13,7 +13,7 @@ public class GameMaster : MonoBehaviour
 
     void Update()
     {
-        if (player.health == 20)
+        if (player != null && player.health == 20)
         {
             PlayerWin();
         } 

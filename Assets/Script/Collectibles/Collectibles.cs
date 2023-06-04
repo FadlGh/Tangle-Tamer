@@ -10,6 +10,7 @@ public class Collectibles : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerHealth>().EditHealth(collectibleData.collectibleValue);
+            GameObject.FindGameObjectWithTag("AM").GetComponent<AudioManager>().Play(collectibleData.soundName);
             Destroy(gameObject);
         }
     }
