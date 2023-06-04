@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa4a881d28ba0ca4fab1712003680122, type: 3}
   m_Name: Brush
   m_EditorClassIdentifier: 
+  soundName: Collect
   collectibleValue: 2
